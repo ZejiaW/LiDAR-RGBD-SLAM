@@ -22,7 +22,7 @@ def rotation_matrix(axis, theta):
                      [2 * (bd + ac), 2 * (cd - ab), aa + dd - bb - cc]])
 
 if __name__ == "__main__":
-  obj_name = 'drill' # drill or liq_container
+  obj_name = 'liq_container' # drill or liq_container
   num_pc = 4 # number of point clouds
 
   source_pc = read_canonical_model(obj_name)
@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     best_dist_lst = float('inf')
     best_init = None
-    for _ in range(100):
+    for _ in range(20):
       init_pose = np.eye(4)
       axis = np.random.uniform(0, 1, 3)
       axis = axis / np.linalg.norm(axis)
