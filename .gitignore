@@ -1,0 +1,25 @@
+__pycache__
+./data
+./code/data
+./figures
+
+./data/dataRGBD.zip
+./data/dataRGBD/
+
+# mac os
+.DS_Store
+
+
+# python
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+
+*.npy
+*.npz
+*.pkl
+*.mat
+
+ECE276A_PR2.pdf
